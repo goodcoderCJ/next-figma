@@ -24,8 +24,8 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-64 h-screen bg-white shadow-md p-4 flex flex-col z-[1000] transition-all duration-300">
-      <div className="flex-1 overflow-y-auto h-screen">
+    <div className="w-[160px] fixed top-0 left-0 h-screen bg-white shadow-md p-4 flex flex-col z-[1000] transition-all duration-300">
+      <div className="flex-1 overflow-y-auto min-h-screen">
       <div className="sidebar-profile-pix flex items-center justify-center mt-[0.9rem]">
         <Image src="/travel-agent2.png" alt="profile-pix" width={60} height={60} className="rounded-full"/>
       </div>

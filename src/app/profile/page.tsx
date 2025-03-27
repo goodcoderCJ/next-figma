@@ -9,7 +9,7 @@ import { MdOutlineMuseum } from "react-icons/md";
 
 const Profile = () => {
   return (
-    <div className="container mx-auto pl-24 pb-24 pr-24">
+    <div className="mx-auto pl-24 pb-24 pr-24">
    <Link href="/">Back</Link>
       <div className="grid-container grid grid-cols-[10%_29%_35%_5%_10%_5%_5%_1%] grid-rows-[10%_30%_45%_10%_5%]">
         {/* Profile Header */}

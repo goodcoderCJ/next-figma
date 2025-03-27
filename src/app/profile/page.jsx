@@ -101,10 +101,10 @@ const Profile = () => {
             ].map((hobby, i) => (
               <span
                 key={i}
-                className="bg-gray-200 px-3 py-1 rounded-full text-sm flex flex-col gap-2"
+                className=" px-3 py-1 flex flex-col gap-2 items-center"
               >
                 <div
-                  className="h-10 w-10 rounded-full text-white "
+                  className="h-14 w-14 rounded-full text-white flex items-center justify-center text-[2rem]"
                   style={{ backgroundColor: `${hobby.color}` }}
                 >
                   {hobby.icon}
@@ -129,10 +129,10 @@ const Profile = () => {
             ].map((interest, i) => (
               <span
               key={i}
-              className="bg-gray-200 px-3 py-1 rounded-full text-sm flex flex-col gap-2"
+              className=" px-3 py-1  flex flex-col gap-2 items-center"
             >
               <div
-                className="h-10 w-10 rounded-full text-white"
+                className="h-14 w-14 rounded-full text-white flex items-center justify-center text-[2rem]"
                 style={{ backgroundColor: `${interest.color}` }}
               >
                 {interest.icon}

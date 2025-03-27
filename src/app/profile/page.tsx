@@ -84,14 +84,14 @@ const Profile = () => {
           >
             <div className="flex items-center flex-col gap-3 text-gray-800">
               Add Photo
-              <HiOutlinePhotograph className="text-[2.5rem]" />
+              <HiOutlinePhotograph className="text-[1.5rem]" />
             </div>
           </div>
         ))}
       </div>
 
       {/* Hobbies & Interests Section */}
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 py-[2rem]">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 py-[1rem]">
         <div className="bg-white shadow-md p-4 rounded-lg">
           <h3 className="font-bold mb-2 text-[2rem]">My Hobbies</h3>
           <div className="flex flex-wrap gap-2">
@@ -112,7 +112,7 @@ const Profile = () => {
             ].map((hobby, i) => (
               <div
                 key={i}
-                className=" px-3 py-1 flex flex-col gap-2 items-center"
+                className=" px-3  flex flex-col gap-2 items-center"
               >
                 <div
                   className="h-10 w-10 rounded-full text-white flex items-center justify-center text-[1.2rem]"
@@ -126,7 +126,7 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className="bg-white shadow-md px-4 rounded-lg mt-8 py-[2rem] ">
+        <div className="bg-white shadow-md px-4 rounded-lg mt-6 py-[1rem] ">
           <h3 className="font-bold mb-2 text-[2rem]">My Interests</h3>
           <div className="flex flex-wrap gap-2">
             {[
@@ -154,7 +154,7 @@ const Profile = () => {
           </div>
         </div>
 
-        <div className="bg-white shadow-md px-4 py-[2rem] mt-8 rounded-lg">
+        <div className="bg-white shadow-md px-4 py-[1rem] mt-6 rounded-lg">
           <h3 className="font-bold mb-2 text-[2rem]">About Me</h3>
           <ul className="text-sm text-gray-600">
             <li>

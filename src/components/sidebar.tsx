@@ -35,7 +35,7 @@ const Sidebar = () => {
         <Link key={item.name} href={item.path}>
           <button
             onClick={() => setActive(item.name)}
-            className={` flex gap-3 items-center py-2 px-4 rounded-md mb-2 ${
+            className={`w-full flex gap-3 items-center py-2 px-4 rounded-md mb-2 ${
               active === item.name ? "bg-red-500 text-white" : "text-gray-700"
             }`}
           >

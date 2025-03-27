@@ -52,7 +52,7 @@ interface ProfileCardProps {
         
         
         <div className="col-start-2 col-end-8 row-start-9 row-end-11 flex justify-between items-center  py-[0.5rem]">
-        {verified ? <button className="bg-green-700 text-white px-4 py-1 mt-2 rounded-[20px] cursor-pointer" onClick={()=>router.push("/profile")} >More Info</button> : <button className="bg-red-700 text-white px-4 py-1 mt-2 rounded-[20px] cursor-pointer" onClick={()=>router.push("/profile")}>More Info</button>}
+        {verified ? <button className="bg-green-700 text-white px-4 py-1 mt-2 rounded-[cursor-pointer20px] cursor-pointer" onClick={()=>router.push("/profile")} >More Info</button> : <button className="bg-red-700 text-white px-4 py-1 mt-2 rounded-[20px] cursor-pointer" onClick={()=>router.push("/profile")}>More Info</button>}
         <button onClick={toggleHeart}>{active ? <FaHeart className="text-red-700"/> : <FaRegHeart className="text-gray-800"/> }</button>
         
         </div>

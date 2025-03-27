@@ -9,7 +9,7 @@ import { MdOutlineMuseum } from "react-icons/md";
 
 const Profile = () => {
   return (
-    <div className="mx-auto pl-24 pb-24 pr-24">
+    <div className="container mx-auto pb-24 py-[1rem]">
    <Link href="/">Back</Link>
       <div className="grid-container grid grid-cols-[10%_29%_35%_5%_10%_5%_5%_1%] grid-rows-[10%_30%_45%_10%_5%]">
         {/* Profile Header */}
@@ -68,7 +68,7 @@ const Profile = () => {
 
       {/* Photo Upload Section */}
       <div className="flex gap-4 mt-8 bg-white rounde-md shadow-md">
-        <div className="w-20 h-20 border flex items-center justify-center">
+        <div className="w-20 h-20  flex items-center justify-center">
           <Image
             src="/travel-agent3.png"
             width={40}
@@ -115,7 +115,7 @@ const Profile = () => {
                 className=" px-3 py-1 flex flex-col gap-2 items-center"
               >
                 <div
-                  className="h-14 w-14 rounded-full text-white flex items-center justify-center text-[2rem]"
+                  className="h-10 w-10 rounded-full text-white flex items-center justify-center text-[1.2rem]"
                   style={{ backgroundColor: `${hobby.color}` }}
                 >
                   {hobby.icon}
@@ -143,7 +143,7 @@ const Profile = () => {
               className=" px-3 py-1  flex flex-col gap-2 items-center"
             >
               <div
-                className="h-14 w-14 rounded-full text-white flex items-center justify-center text-[2rem]"
+                className="h-10 w-10 rounded-full text-white flex items-center justify-center text-[1.2rem]"
                 style={{ backgroundColor: `${interest.color}` }}
               >
                 {interest.icon}

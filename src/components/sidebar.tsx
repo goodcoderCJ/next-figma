@@ -24,8 +24,8 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="w-[160px] fixed top-0 left-0 h-screen bg-white shadow-md p-4 flex flex-col z-[1000] transition-all duration-300">
-      <div className="flex-1 overflow-y-auto min-h-screen">
+    <div className="w-[20%] fixed top-0 left-0 h-screen bg-white shadow-md p-4 flex flex-col z-[1000] transition-all duration-300">
+      <div className="flex-1 overflow-y-clip min-h-screen ">
       <div className="sidebar-profile-pix flex items-center justify-center mt-[0.9rem]">
         <Image src="/travel-agent2.png" alt="profile-pix" width={60} height={60} className="rounded-full"/>
       </div>
@@ -35,12 +35,12 @@ const Sidebar = () => {
         <Link key={item.name} href={item.path}>
           <button
             onClick={() => setActive(item.name)}
-            className={`w-full flex gap-3 items-center py-2 px-4 rounded-md mb-2 ${
+            className={` flex gap-3 items-center py-2 px-4 rounded-md mb-2 ${
               active === item.name ? "bg-red-500 text-white" : "text-gray-700"
             }`}
           >
-            <p>{item.icon}</p>
-            <p>{item.name}</p>
+            <p className="0.7rem">{item.icon}</p>
+            <p className="0.8rem">{item.name}</p>
           </button>
         </Link>
       ))}

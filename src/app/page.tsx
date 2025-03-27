@@ -1,103 +1,200 @@
 import Image from "next/image";
+import ProfileCard from "@/components/profileCard";
+
+const profiles = [
+  {
+    name: "Davina",
+    age: 23,
+    location: "Abuja",
+    match: 85,
+    image: "/first-image.png",
+    profile: "/avatar1.png",
+    verified: false,
+  },
+  {
+    name: "Emily",
+    age: 31,
+    location: "Lagos",
+    match: 80,
+    image: "/second-image.png",
+    profile: "/second-profile.png",
+    verified: false,
+  },
+  {
+    name: "John",
+    age: 28,
+    location: "Delta",
+    match: 72,
+    image: "/eighth-image.png",
+    profile: "/avatar6.png",
+    verified: false,
+  },
+  {
+    name: "Davina",
+    age: 23,
+    location: "Abuja",
+    match: 85,
+    image: "/fourth-image.png",
+    profile: "/fourth-profile.png",
+    verified: false,
+  },
+  {
+    name: "Emily",
+    age: 31,
+    location: "Lagos",
+    match: 80,
+    image: "/fifth-image.png",
+    profile: "/fifth-profile.png",
+    verified: true,
+  },
+  {
+    name: "John",
+    age: 28,
+    location: "Delta",
+    match: 72,
+    image: "/sixth-image.png",
+    profile: "/sixth-profile.png",
+    verified: true,
+  },
+  {
+    name: "Mads",
+    age: 26,
+    location: "",
+    match: 77,
+    image: "/seventh-image.png",
+    profile: "/seventh-profile.png",
+    verified: false,
+  },
+  {
+    name: "Love",
+    age: 26,
+    location: "Lagos",
+    match: 80,
+    image: "/eighth-image.png",
+    profile: "/eighth-profile.png",
+    verified: false,
+  },
+  {
+    name: "Karen",
+    age: 23,
+    location: "Abuja",
+    match: 85,
+    image: "/ninth-image.png",
+    profile: "/ninth-profile.png",
+    verified: false,
+  },
+  {
+    name: "Sharon",
+    age: 24,
+    location: "Lagos",
+    match: 80,
+    image: "/tenth-image.png",
+    profile: "/tenth-profile.png",
+    verified: false,
+  },
+  {
+    name: "Kevin",
+    age: 30,
+    location: "PH",
+    match: 70,
+    image: "/eleventh-image.png",
+    profile: "/eleventh-profile.png",
+    verified: true,
+  },
+  {
+    name: "Lily",
+    age: 25,
+    location: "Lagos",
+    match: 89,
+    image: "/twelvth-image.png",
+    profile: "/twelvth-profile.png",
+    verified: false,
+  },
+  {
+    name: "Vivian",
+    age: 27,
+    location: "Edo",
+    match: 71,
+    image: "/thirteenth-image.png",
+    profile: "/third-profile.png",
+    verified: false,
+  },
+  {
+    name: "Jack",
+    age: 30,
+    location: "Lagos",
+    match: 87,
+    image: "/fourth-image.png",
+    profile: "/fourth-profile.png",
+    verified: false,
+  },
+  {
+    name: "Dave",
+    age: 26,
+    location: "Lagos",
+    match: 80,
+    image: "/eighth-image.png",
+    profile: "/eighth-profile.png",
+    verified: false,
+  },
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="container mx-auto pl-24 pb-24 pr-24">
+      <div className="bg-white mt-[-25px] flex gap-16 items-center">
+        <div className="image flex gap-4">
+          <Image
+            src="/travel-agent2.png"
+            alt="hero-image"
+            width={70}
+            height={70}
+            className="rounded-full"
+          />
+          <div className="para-progress-bar">
+            <p className="para font-bold text-gray-700">Welcome, Temiloluwa</p>
+            <div className="progress-container text-gray-700">
+              <p className="text-[0.6rem]">My Profile Completeness</p>
+              <div className="progress flex gap-1">
+                <input
+                  type="range"
+                  name=""
+                  id=""
+                  value={60}
+                  min="0"
+                  max="80"
+                  className="accent-red-700 bg-transparent rounded-lg cursor-pointer"
+                />
+                <p className="text-[0.7rem]">60%</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="mb-4">
+          <div>
+            <label className="mr-2 font-bold text-[0.8rem] text-gray-700">
+              Relationship Type:
+            </label>
+            <select className="p-1 border rounded text-[0.7rem] border-gray-700 text-gray-700">
+              <option>Dating</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+        {profiles.map((profile, idx) => (
+          <ProfileCard
+            key={idx}
+            name={profile.name}
+            age={profile.age}
+            location={profile.location}
+            match={profile.match}
+            image={profile.image}
+            profile={profile.profile}
+            verified={profile.verified}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        ))}
+      </div>
     </div>
   );
 }

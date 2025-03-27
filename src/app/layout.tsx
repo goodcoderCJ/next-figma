@@ -34,9 +34,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col min-h-screen border">
+        
         <Navbar />
-        <main className="flex py-[1.5em] flex-1">
+        <main className="flex ">
           {/* Sidebar toggled with the state */}
           {isSidebarOpen && <Sidebar />}
           <div className="p-4 flex-1">
@@ -55,7 +55,7 @@ export default function RootLayout({
           <Image width={40} height={40} alt="logo" src="/3c-logo.png" />
           <p>Worked by CJay</p>
         </footer>
-        </div>
+     
         
       </body>
     </html>

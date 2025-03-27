@@ -141,7 +141,7 @@ const profiles = [
 
 export default function Home() {
   return (
-    <div className="container mx-auto  pb-24 px-[1rem]">
+    <div className="container mx-auto pl-24 pb-24 pr-24">
       <div className="bg-white mt-[-25px] flex gap-16 items-center">
         <div className="image flex gap-4">
           <Image
